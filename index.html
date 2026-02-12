@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Container" id="initialPage">
+        <div class="card">
+            <img src="FLOWER.jpeg" alt="Cute Bear" class="bear-image">
+            <h1 id="mainHeading">Will you be mine Bestfriend Forever? 🥺</h1>
+            <p id="mainMessage">Life is an incredible journey, and I want to spend every single second of it with you.</p>
+            <div class="buttons" style="display: flex; justify-content: center; gap: 20px;">
+                <button id="yesButton" class="btn yes-btn">YES</button>
+                <button id="noButton" class="btn no-btn">NO</button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop> 
+        <source src="song.mp4.mpeg" type="audio/mpeg">
+    </audio>
+
+    <div class="container hidden" id="happyValentinePage">
+        <div class="card">
+            <img src="FRIEND.jpeg" alt="Happy Bears" class="bear-image">
+            <h1>Happy Valentine Day Bestie! 💍</h1>
+            <p>Every second with you is a celebration. You are the spark that makes my world so much brighter!</p>
+            <button id="seeMyGiftsButton" class="btn primary-btn">SEE MY GIFTS</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="surprisePage">
+    <div class="card">
+        <h1>Surprise! 🎁</h1>
+        <div class="video-container">
+            <video id="surpriseVideo" width="100%" controls style="border-radius:15px;">
+                <source src="video2.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </div>
+        <p class="final-message">Ek aur chota sa tohfa mere dil se! ❤️</p>
+        <button id="backFromSurprise" class="btn secondary-btn">Back</button>
+    </div>
+</div>
+
+    <div class="container hidden" id="giftsPage">
+        <div class="card">
+            <h1>Something for You</h1>
+            <div class="gifts-grid">
+                <div class="gift-item" id="gift1">
+                    <img src=image3.png alt="Gift 1">
+                    <p>Gift 1</p>
+                </div>
+                <div class="gift-item" id="gift2">
+                    <img src="image3.png" alt="Gift 2">
+                    <p>Gift 2</p>
+                </div>
+                <div class="gift-item" id="gift3">
+                    <img src="image2.png" alt="Gift 3">
+                    <p>Gift 3</p>
+                </div>
+            </div>
+            <button id="finallyButton" class="btn primary-btn">FINALLY</button>
+            <button id="backFromGifts" class="btn secondary-btn hidden">Back</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="quizPage1">
+        <div class="card">
+            <h1>Quiz for you 🤨</h1>
+            <p>Who is the absolute 'Boss' in this Friendship?</p>
+            <div class="quiz-options">
+                <button class="quiz-btn" data-correct="true">Obviously You</button>
+                <button class="quiz-btn">Me</button>
+                <button class="quiz-btn">My Mom</button>
+            </div>
+            <p id="quizError1" class="error-message hidden">Oofie, please try again. 😖</p>
+            <button id="backFromQuiz1" class="btn secondary-btn">Back</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="quizPage2">
+        <div class="card">
+            <h1>Quiz for you 🤨</h1>
+            <p>What fights a lot in this Friendship?</p>
+            <div class="quiz-options">
+                <button class="quiz-btn" data-correct="true">Always You</button>
+                <button class="quiz-btn">No One</button>
+                <button class="quiz-btn">Me</button>
+            </div>
+            <p id="quizError2" class="error-message hidden">Oofie, please try again. 😖</p>
+            <button id="backFromQuiz2" class="btn secondary-btn">Back</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="quizPage3">
+        <div class="card">
+            <h1>Quiz for you 🤨</h1>
+            <p>Where do I plan to spend the rest of my life?</p>
+            <div class="quiz-options">
+                <button class="quiz-btn">Paris</button>
+                <button class="quiz-btn" data-correct="true">In Your Heart</button>
+                <button class="quiz-btn">On Mars</button>
+            </div>
+            <p id="quizError3" class="error-message hidden">Oofie, please try again. 😖</p>
+            <button id="backFromQuiz3" class="btn secondary-btn">Back</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="quizSuccessPage">
+        <div class="card">
+            <h1>Yay! You passed the test! You really love me! 🥰</h1>
+            <button id="backFromQuizSuccess" class="btn primary-btn">Back</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="letterPage">
+        <div class="card">
+            <h1>a Letter For You my Bestie 🥺</h1>
+            <p class="letter-content">
+        My Bestie,<br><br> 
+        I appreciate you for everthing,you are my Bestfreind & sometimes I fail to tell you that I love you more than anyone. I'm sorry sometime I wasn't there for you when you need me But I promise , I value you, I value our friendship, I'm not fake. I will be there for you every step of your life.
+        I know I'm not your heart But I really miss you I'm not your family But I care you for you I am not your blood But I share your pain Because I'm your Bestfriend Who Always There for you.
+        Thanku for being My Bestie💗<br><br>
+        Forever yours ❤️
+             </p>
+            <button id="backFromLetter" class="btn secondary-btn">Back</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="photoGalleryPage">
+        <div class="card">
+            <h1>Look at this Bestie 🥰</h1>
+            <div class="photo-grid">
+                <div class="photo-item"><img src="Bestie.jpg" alt="1"><p>Bestie</p></div>
+                <div class="photo-item"><img src="Forever.jpg" alt="2"><p>ForeverBF</p></div>
+                <div class="photo-item"><img src="Anay.jpg" alt="3"><p>BestFriend</p></div>
+                <div class="photo-item"><img src="IMAGE11.jpeg" alt="3"><p>RoseDay</p></div>
+                <div class="photo-item"><img src="image2.png" alt="3"><p>HogDay</p></div>
+                <div class="photo-item"><img src="Kiss Day.jpeg" alt="3"><p>Kiss Day</p></div>
+                <div class="photo-item"><img src="Teddy Day.jpeg" alt="3"><p>TeddyDay</p></div>
+                <div class="photo-item"><img src="PromiseDay.jpeg" alt="3"><p>PromiseDay</p></div>
+                 <div class="photo-item"><img src="Chocolate.jpeg" alt="3"><p>ChocolateDay</p></div>
+
+
+             </div>
+            <button id="backFromGallery" class="btn secondary-btn">Back</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="finalGiftPage">
+        <div class="card">
+            <h1>You are my forever 🧿❤️!</h1>
+            <div class="video-container">
+                <video width="100%" controls autoplay loop muted style="border-radius:15px;">
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+            </div>
+            <p class="final-message">
+                You are My first and last Bestie🥲🥲.<br>
+                You are forever Bestie.
+            </p>
+            <div style="margin-top: 15px;">
+                <p><strong>A special gift for a special person!</strong></p>
+                <button id="extraSurpriseBtn" class="btn primary-btn">CLICK FOR SURPRISE 🎁</button>
+            </div>
+            <button id="backFromFinalGift" class="btn secondary-btn" style="margin-top:10px;">Back</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
